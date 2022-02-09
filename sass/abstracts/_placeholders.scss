@@ -1,0 +1,8 @@
+%button {
+    padding:5px 10px;
+    border-radius:3px;
+    // Buttons text will contrast with the "actionable color" by default 
+    color: $actionable-color-contrast;
+    // Buttons are assigned the default "actionable color"
+    @include button-bg($actionable-color);
+}

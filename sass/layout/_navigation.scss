@@ -1,0 +1,61 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+.navbar-logo {
+    flex: 1 1 0;
+    & > img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.navbar-list {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 0;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar-list-item {
+    margin-bottom:  0.2rem;
+    & > a {
+        display: inline-block;
+        padding: 0.2rem 0.5rem;
+        margin: 0 0.8rem;
+        background-image: linear-gradient(#ffffff, #ffffff), 
+            linear-gradient(#{$mood-color-2}, #{$mood-color-2});
+
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-color 0.3s, color 0.3s, font-size 0.3s, 
+            background-size 0.2s ease;
+
+        @include nav-item(#000000, $mood-color-2);
+    }
+    & > a:hover {
+        background-size: 0 3px, 100% 3px;
+    }
+}
+
+
+
+
+
+// Desktop layout
+@media (min-width: 600px){
+    .navbar {
+        flex-direction: row;
+    }
+
+    .navbar-list {
+        flex-direction: row;
+        justify-content: right;
+        }
+}

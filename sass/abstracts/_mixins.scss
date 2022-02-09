@@ -1,0 +1,40 @@
+/* NAVBAR MIXINS */
+
+@mixin nav-item($font-color, $hover-font-color) {
+    color: $font-color;
+    &:hover,
+    &:focus {
+        color: $hover-font-color;
+    }
+}
+
+
+/* BUTTON MIXINS */
+
+@mixin button-bg($bg) {
+    background: $bg;
+    &:hover {
+      background:darken($bg,8%);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background:darken($bg,25%);
+    } 
+  }
+
+@mixin button-size($size) {
+  $bttn-font-size: map.get($button-sizes, $size);
+  font-size: $bttn-font-size;
+}
+
+/* UTILITIES */
+
+@mixin margins($margin-options) {
+  margin-top: map.get($margin-options, "top");
+  margin-right: map.get($margin-options, "right");
+  margin-bottom: map.get($margin-options, "bottom");
+  margin-left: map.get($margin-options, "left");
+}
+
+
+

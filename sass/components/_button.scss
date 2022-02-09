@@ -1,0 +1,20 @@
+
+.navbar-button--small {
+    @extend %button;
+    @include button-size("small");
+    @include margins($button-margins);
+}
+
+.navbar-button--medium {
+    @extend %button;
+    @include button-size("medium");
+    @include margins($button-margins);
+}
+
+.navbar-button--large {
+    @extend %button;
+    @include button-size("large");
+    @include margins($button-margins)
+}
+
+

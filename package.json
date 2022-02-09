@@ -1,0 +1,19 @@
+{
+  "name": "my-personal-website",
+  "version": "1.0.0",
+  "description": "This is my personal portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "\u001b[D"
+  },
+  "author": "mManuel De Luzi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.49.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
