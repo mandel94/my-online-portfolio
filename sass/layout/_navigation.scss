@@ -1,22 +1,23 @@
 .navbar {
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: 80px;
+    background-color: $navbar-bg-color;
+    box-shadow: 0 1px 4px lighten(#000000, 80%);
+    font-family: $boldish-font;
 }
 
 .navbar-logo {
-    flex: 1 1 0;
-    & > img {
-        display: block;
-        margin: 0 auto;
-    }
+    flex: 2 0 150px;
+    max-height: 100%;
 }
 
 .navbar-list {
+    max-height: 100%;
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-    flex: 2 1 0;
+    flex: 4 1 0;
     list-style-type: none;
     padding: 0;
     align-items: center;
@@ -45,14 +46,19 @@
 }
 
 
+// BURGER
+.burgerMenu {
+    flex: 1 1 auto;
+}
 
 
 
 // Desktop layout
-@media (min-width: 600px){
+@media (min-width: $lg-breakpoint){
     .navbar {
         flex-direction: row;
     }
+
 
     .navbar-list {
         flex-direction: row;

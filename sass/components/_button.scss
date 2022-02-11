@@ -1,4 +1,6 @@
 
+/* NAVBAR */
+
 .navbar-button--small {
     @extend %button;
     @include button-size("small");
@@ -16,5 +18,4 @@
     @include button-size("large");
     @include margins($button-margins)
 }
-
 

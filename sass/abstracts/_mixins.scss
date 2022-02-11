@@ -14,8 +14,10 @@
 @mixin button-bg($bg) {
     background: $bg;
     &:hover {
-      background:darken($bg,8%);
-      transition: all 0.3s ease;
+      background:$actionable-color-contrast;
+      color: $actionable-color;
+      outline: $actionable-color solid 1.5px;
+      transition: all 0.1s ease-in;
     }
     &:active {
       background:darken($bg,25%);
